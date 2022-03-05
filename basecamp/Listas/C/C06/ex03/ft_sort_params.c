@@ -6,7 +6,7 @@
 /*   By: dwesley <dwesley@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/05 02:56:52 by dwesley           #+#    #+#             */
-/*   Updated: 2022/03/05 02:57:53 by dwesley          ###   ########.fr       */
+/*   Updated: 2022/03/05 04:21:48 by dwesley          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,13 +40,13 @@ int	ft_strcmp(char *s1, char *s2)
 		return (1);
 }
 
-void	ft_swap_str(t_string *strA, t_string *strB)
+void	ft_swap_str(t_string *a, t_string *b)
 {
 	t_string	temp;
 
-	temp = *strA;
-	*strA = *strB;
-	*strB = temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 void	ft_sort_strings(t_string strs[], int size)
