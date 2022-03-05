@@ -6,7 +6,7 @@
 /*   By: dwesley <dwesley@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 04:41:42 by dwesley           #+#    #+#             */
-/*   Updated: 2022/02/14 07:53:54 by dwesley          ###   ########.fr       */
+/*   Updated: 2022/03/05 02:58:06 by dwesley          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #define STDOUT 1
 
-void	ft_printstr(char *str)
+void	ft_print_str(char *str)
 {
 	while (*str)
 		write(STDOUT, str++, 1);
@@ -27,5 +27,5 @@ int	main(int argc, char *argv[])
 
 	index = argc - 1;
 	while (index > 0)
-		ft_printstr(argv[index--]);
+		ft_print_str(argv[index--]);
 }

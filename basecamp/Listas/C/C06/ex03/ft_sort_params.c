@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dwesley <@student.42sp.org.br>             +#+  +:+       +#+        */
+/*   By: dwesley <dwesley@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 04:59:41 by dwesley           #+#    #+#             */
-/*   Updated: 2022/03/04 05:38:16 by dwesley          ###   ########.fr       */
+/*   Created: 2022/03/05 02:56:52 by dwesley           #+#    #+#             */
+/*   Updated: 2022/03/05 02:57:53 by dwesley          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 typedef char *	t_string;
 
-void	ft_printstr(char *str)
+void	ft_print_str(char *str)
 {
 	while (*str)
 		write(STDOUT, str++, 1);
@@ -80,5 +80,5 @@ int	main(int argc, char *argv[])
 	ft_sort_strings(args, argc - 1);
 	index = 0;
 	while (index < argc - 1)
-		ft_printstr(args[index++]);
+		ft_print_str(args[index++]);
 }
