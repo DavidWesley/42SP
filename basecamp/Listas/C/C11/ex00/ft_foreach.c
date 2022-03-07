@@ -16,5 +16,5 @@ void	ft_foreach(int *tab, int length, void (*f)(int))
 
 	index = 0;
 	while (index < length)
-		f(tab[index]);
+		f(tab[index++]);
 }
