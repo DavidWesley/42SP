@@ -62,11 +62,9 @@ void	ft_allocate_memo_from_segmenters(
 	char **list
 )
 {
-	t_uint	index;
 	t_uint	token_len;
 	t_bool	started_segment;
 
-	index = 0;
 	token_len = 1;
 	started_segment = FALSE;
 	while (*str != '\0')
@@ -75,7 +73,7 @@ void	ft_allocate_memo_from_segmenters(
 		{
 			if (started_segment == TRUE)
 			{
-				list[index++] = (char *)malloc(sizeof(char) * token_len);
+				*(list++) = (char *)malloc(sizeof(char) * token_len);
 				started_segment = FALSE;
 			}
 			token_len = 0;
@@ -138,5 +136,6 @@ char	**ft_split(char *str, char *charset)
 // 	char	**a = ft_split("oi brazilia", "a");
 // 	while (*a != 0)
 // 		printf("RESULT: %s\n", *a++);
+// 	printf("RESULT: %s\n", *a);
 // 	return (0);
 // }
